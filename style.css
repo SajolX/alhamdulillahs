@@ -16,17 +16,18 @@ backdrop-filter:blur(12px);
 position:sticky;
 top:0;
 z-index:1000;
+border-bottom:1px solid rgba(56,189,248,0.2);
 }
 
 .logo{
 display:flex;
 align-items:center;
-gap:10px;
+gap:12px;
 }
 
 .logo img{
-height:70px;
-border-radius:10px;
+height:75px;
+border-radius:12px;
 box-shadow:0 0 20px rgba(56,189,248,0.6);
 transition:0.3s;
 }
@@ -35,12 +36,23 @@ transition:0.3s;
 transform:scale(1.1);
 }
 
+.logo h2{
+margin:0;
+color:#38bdf8;
+}
+
+.logo small{
+color:#cbd5e1;
+font-size:12px;
+}
+
 /* MENU */
 .menu a{
 color:white;
 text-decoration:none;
 margin-left:20px;
 transition:0.3s;
+font-weight:500;
 }
 
 .menu a:hover{
@@ -50,58 +62,76 @@ color:#38bdf8;
 /* HERO */
 .hero{
 text-align:center;
-padding:120px 20px;
-background:linear-gradient(135deg,#0f172a,#1e293b);
+padding:130px 20px;
+background:radial-gradient(circle,#1e293b,#0b1220);
 }
 
 .hero h1{
-font-size:42px;
-animation:fade 2s ease;
+font-size:40px;
+margin-bottom:10px;
+letter-spacing:2px;
 }
 
 .hero p{
 color:#cbd5e1;
+font-size:18px;
+}
+
+.tags{
+margin-top:20px;
+}
+
+.tags span{
+display:inline-block;
+margin:5px;
+padding:6px 12px;
+border:1px solid #38bdf8;
+border-radius:20px;
+font-size:12px;
+color:#38bdf8;
 }
 
 .hero button{
-padding:12px 25px;
-margin-top:20px;
+margin-top:25px;
+padding:12px 28px;
 border:none;
 background:#38bdf8;
-border-radius:8px;
+font-weight:bold;
+border-radius:10px;
 cursor:pointer;
 transition:0.3s;
 }
 
 .hero button:hover{
 background:white;
-transform:scale(1.1);
+color:black;
+transform:scale(1.05);
 }
 
-/* CARDS */
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+/* ABOUT */
+.about{
 padding:60px 10%;
+text-align:center;
+color:#cbd5e1;
+}
+
+/* CONTACT */
+.contact{
+padding:60px 10%;
+text-align:center;
 }
 
 .card{
 background:#10203a;
 padding:25px;
-text-align:center;
 border-radius:12px;
-transition:0.3s;
+margin-top:20px;
+box-shadow:0 0 20px rgba(0,0,0,0.3);
 }
 
-.card:hover{
-transform:translateY(-10px);
-}
-
-/* CONTACT */
-.contact{
-text-align:center;
-padding:60px;
+.card a{
+color:#38bdf8;
+text-decoration:none;
 }
 
 /* FOOTER */
@@ -109,38 +139,17 @@ footer{
 text-align:center;
 padding:20px;
 background:#050c18;
+border-top:1px solid rgba(255,255,255,0.05);
 }
 
-/* MOBILE MENU */
-.menu-toggle{
-display:none;
-font-size:28px;
-cursor:pointer;
-}
-
+/* RESPONSIVE */
 @media(max-width:768px){
-.menu{
-display:none;
+.hero h1{
+font-size:28px;
+}
+
+.header{
 flex-direction:column;
-background:#10203a;
-position:absolute;
-top:70px;
-right:20px;
-padding:15px;
-border-radius:10px;
+gap:10px;
 }
-
-.menu a{
-margin:10px 0;
-}
-
-.menu-toggle{
-display:block;
-}
-}
-
-/* ANIMATION */
-@keyframes fade{
-from{opacity:0; transform:translateY(20px);}
-to{opacity:1; transform:translateY(0);}
 }
