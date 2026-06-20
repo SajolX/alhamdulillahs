@@ -12,11 +12,13 @@
 
 <header class="header">
   <div class="logo">
-    <img src="assets/images/logo.png" alt="Logo">
+    <img src="logo.png" alt="Logo">
     <h2>AlhamdulillahS</h2>
   </div>
 
-  <nav class="menu">
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav class="menu" id="menu">
     <a href="#">Home</a>
     <a href="#">About</a>
     <a href="#">Services</a>
@@ -25,28 +27,27 @@
 </header>
 
 <section class="hero">
-  <h1>Defined Quantum Technologies</h1>
-  <p>We build modern digital solutions</p>
-  <button>Get Started</button>
+  <h1>Build Your Future Website</h1>
+  <p>Modern • Fast • Responsive • Professional</p>
+  <button onclick="showMsg()">Get Started</button>
 </section>
 
-<section class="grid-section">
-  <div class="box">Software Development</div>
-  <div class="box">AI Solutions</div>
-  <div class="box">Cyber Security</div>
-  <div class="box">Innovation</div>
+<section class="cards">
+  <div class="card">Software Development</div>
+  <div class="card">AI Solutions</div>
+  <div class="card">Cyber Security</div>
+  <div class="card">Innovation</div>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="card">
-    <p>Email: your@email.com</p>
-  </div>
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p id="msg"></p>
 </section>
 
 <footer>
   <p>© 2026 AlhamdulillahS</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
