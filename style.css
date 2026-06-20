@@ -108,6 +108,63 @@ margin-top:10px;
 .hero-buttons{
 margin-top:25px;
 }
+.ceo-section{
+padding:80px 10%;
+display:flex;
+justify-content:center;
+}
+
+.ceo-card{
+display:flex;
+gap:20px;
+align-items:center;
+background:rgba(255,255,255,0.03);
+border:1px solid rgba(56,189,248,0.2);
+padding:25px;
+border-radius:16px;
+max-width:800px;
+backdrop-filter:blur(10px);
+transition:0.3s;
+}
+
+.ceo-card:hover{
+transform:scale(1.02);
+}
+
+.ceo-img{
+width:150px;
+height:150px;
+object-fit:cover;
+border-radius:50%;
+border:3px solid #38bdf8;
+box-shadow:0 0 20px rgba(56,189,248,0.5);
+}
+
+.ceo-info h2{
+margin:0;
+color:#38bdf8;
+}
+
+.ceo-info h4{
+margin:5px 0;
+color:#cbd5e1;
+}
+
+.ceo-info p{
+color:#cbd5e1;
+font-size:14px;
+}
+
+.badge{
+display:inline-block;
+margin-top:10px;
+padding:5px 12px;
+background:#38bdf8;
+color:black;
+border-radius:20px;
+font-weight:bold;
+font-size:12px;
+}
 
 .primary, .secondary{
 padding:12px 25px;
